@@ -1,0 +1,79 @@
+.container {
+    margin: 0;
+    padding: 0;
+}
+.todoListWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    width: 20rem;
+    margin: 5rem auto 1px auto;
+}
+.todoListHeading {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #333;
+}
+.todoListInput {
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #dcdcdc;
+    box-shadow: inset 0 2px 2px 0 rgb(0 0 0 / 5%);
+    color: #666;
+    font-size: 1.4rem;
+    color: #666;
+    height: 2rem;
+    outline: none;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    display: flex;
+    align-items: center;
+    width: 60%;
+    align-self: flex-start;
+}
+.inputWrapper {
+    display: flex;
+    margin: 1rem;
+}
+.addBtn {
+    text-align: center;
+    display: flex;
+    font: unset;
+    height: 2.3rem;
+    font-size: 1rem;
+    border-radius: 3px;
+    padding: 1rem auto 0px auto;
+    margin-left: 1rem;
+    align-items: center;
+    justify-content: center;
+    width: 6rem;
+    background-color: darkgreen;
+    color: #ffffff;
+    outline: none;
+    border: none;
+}
+.list {
+    display: flex;
+    font-size: 1rem;
+    color: #666;
+    margin-top: 1rem;
+    margin-left: 12px;
+    flex-direction: column;
+    align-self: flex-start;
+    background: #ffffff;
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+.item {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+@media only screen and (min-width: 1000px) {
+}

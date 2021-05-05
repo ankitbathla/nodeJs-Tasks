@@ -1,0 +1,22 @@
+<div class="todoListWrapper">
+    <div class="todoListHeading">Todo List</div>
+    <form action="/list" method="POST">
+        <div class="inputWrapper">
+            <input class="todoListInput" name="new" />
+            <button type="submit" class="addBtn">Add new</button>
+        </div>
+    </form>
+    <div class="list">
+        <div class="item">
+            <%for(var i=0 ;i<list.length ;i++) { %>
+                <div style="display: flex ; font-size:1.4rem  ; padding-top: .5rem">
+                    <div style="margin-right: 1rem">
+                <%= i+1  %></div>
+                <div style="display: flex; align-items:center ; justify-content: space-between ;width: 100%">
+                    <div><%= list[i].name %></div>
+                    <a href ="/list/delete?id=<%= list[i].id %>" style="text-decoration : none ; color : red">delete</a></div>
+                    </div>
+            <% }%>
+        </div>
+    </div>
+</div>
